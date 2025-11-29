@@ -11,7 +11,10 @@ const fs = require("fs");
 // -------------------------------
 const serviceAccount = JSON.parse(process.env.SERVICE_ACCOUNT_KEY);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d835c88f4a49ed765a1336520ea4f7529684624a
 
 // -------------------------------
 // INIT FIREBASE ADMIN

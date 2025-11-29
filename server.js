@@ -26,6 +26,10 @@ admin.initializeApp({
 // EXPRESS SERVER SETUP
 // -------------------------------
 const app = express();
+app.get("/", (req, res) => {
+  res.send("Backend is running ✔");
+});
+
 app.use(bodyParser.json());
 
 // -------------------------------

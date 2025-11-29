@@ -17,7 +17,8 @@ const serviceAccount = JSON.parse(process.env.SERVICE_ACCOUNT_KEY);
 // -------------------------------
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://pethealthtracker-5fcca-default-rtdb.asia-southeast1.firebasedatabase.app"
+  databaseURL: process.env.DATABASE_URL
+
 });
 
 // -------------------------------
